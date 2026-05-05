@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section id="home">
+            <div class="cabecalho">
+                <nav>
+                    <a href="#listarProdutos">LISTAR PRODUTOS</a>
+                    <a href="#inserirProduto">INSERIR PRODUTO</a>
+                    <a href="#atualizaProduto">ATUALIZAR PRODUTO</a>
+                    <a href="#deletaProduto">DELETAR PRODUTO</a>
+                    <div>
+
+                        <button id="categoria">+ CATEGORIA</button>
+
+                    </div>
+                </nav>
+            </div>
+
+        </section>
+    </header>
+
+    <main>
+        <section id="listarProdutos">
+            <h1>LISTAR PRODUTOS</h1><br>
+
+            <button id="get">Listar</button>
+
+            <div id="lista"></div>
+        </section>
+
+
+        <section id="inserirProduto">
+            <h1>CRIAR PRODUTOS</h1><br>
+
+            <form id="formProdutoInsert">
+                <input type="text" id="nomeInsert" placeholder="Nome do produto" required>
+                <input type="number" id="valorInsert" placeholder="Valor" required>
+                <!-- <input type="number" id="categoriaInsert" placeholder="Categoria" required> -->
+                <select id="categoriaInsert"></select>
+
+                <button type="submit" id="post">Criar</button>
+            </form>
+        </section>
+
+        <section id="atualizaProduto">
+            <h1>ATUALIZAR PRODUTOS</h1><br>
+            <form id="formProdutoUpdate">
+                <input type="number" id="idProdutoUpdate" placeholder="ID do produto" required>
+                <input type="text" id="nomeUpdate" placeholder="Nome do produto" required>
+                <input type="number" id="valorUpdate" placeholder="Valor" required>
+                <!-- <input type="number" id="categoriaUpdate" placeholder="Categoria" required> -->
+                <select id="categoriaUpdate"></select>
+                <button type="submit" id="put">Atualizar</button>
+            </form>
+        </section>
+
+        <section id="deletaProduto">
+            <h1>DELETAR PRODUTOS</h1><br>
+            <form id="formProdutoDeleta">
+                <input type="number" id="idProdutoDelete" placeholder="ID do produto" required>
+                <button type="submit" id="delete">Deletar</button>
+
+            </form>
+        </section>
+
+        <div id="modalCategoria" class="modal">
+            <div class="modal-content">
+                <span id="fecharModal">&times;</span>
+
+                <h2>Nova Categoria</h2><br>
+
+                <input type="text" id="nomeInsertCategoria" placeholder="Nome da categoria">
+
+                <button type="submit" id="postCategoria">Salvar</button>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+</body>
+
+</html>
