@@ -1,4 +1,4 @@
-# 🛒 Loja POO EMS
+# 🛒 Loja POO
 
 Projeto de **CRUD de Produtos e Categorias** utilizando **POO (Programação Orientada a Objetos)** em **TypeScript**, **Express** e **MySQL**.
 
