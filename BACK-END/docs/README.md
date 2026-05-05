@@ -96,3 +96,49 @@ Loja_poo_ems/
 - valor
 - idCategoria
 
+
+# Instruções de execução
+
+## 1. Clonar o projeto
+
+```bash
+git clone <url-do-repositorio>
+```
+
+## 2. Entrar na pasta
+
+```bash
+cd nome-do-projeto
+```
+
+## 3. Instalar dependências
+
+```bash
+npm install
+```
+
+## 4. Configurar variáveis ambiente
+
+Criar arquivo `.env`
+
+```env
+SERVER_PORT=8000
+
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=loja_back_front
+DB_USER=seu_user
+DB_PASSWORD=sua_senha
+```
+
+## 5. Executar servidor
+
+```bash
+nodemon .\src\server.ts
+```
+
+Servidor disponível em:
+
+```bash
+http://localhost:8000
+```
