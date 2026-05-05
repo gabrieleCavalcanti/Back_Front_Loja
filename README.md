@@ -1,4 +1,4 @@
-# 🛒 Loja POO EMS
+# 🛒 Loja POO
 
 Projeto de gerenciamento de **produtos e categorias**, desenvolvido com:
 
@@ -10,7 +10,7 @@ Projeto de gerenciamento de **produtos e categorias**, desenvolvido com:
 # 📂 Estrutura do projeto
 
 ```txt
-Loja_POO_EMS/
+Loja_POO/
 │
 ├── BACK-END/
 │   ├── docs/
